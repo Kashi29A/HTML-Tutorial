@@ -1,0 +1,26 @@
+<!-- preload :
+tells the browser to download and cache a resource (like a script or a stylesheet) as soon as possible. 
+It’s helpful when you need that resource a few seconds after loading the page, and you want to speed it up.
+
+prefetch :
+asks the browser to download and cache a resource (like, a script or a stylesheet) in the background. 
+The download happens with a low priority, so it doesn’t interfere with more important resources. It’s helpful when you know you’ll need that resource on a subsequent page, and you want to cache it ahead of time. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" as="script" href="./myjs.js">
+    <link rel="prefetch" href="Input.html">
+    <link rel="preload" as="image" type="image/png" href="./HTML Accessibility Thumbnail.png">
+</head>
+
+<body>
+    <img src="./HTML Accessibility Thumbnail.png" alt="code with kashi">
+</body>
+
+</html>
